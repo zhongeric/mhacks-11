@@ -9,7 +9,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn import metrics
 import coremltools
 import time
-import pickle
 
 from textblob import TextBlob
 
@@ -35,14 +34,8 @@ from textblob.classifiers import NaiveBayesClassifier
 with open('cpradult.csv', 'r') as fp:
     cl = NaiveBayesClassifier(fp, format="csv")
 
-pred = cl.prob_classify("I just put them on their back")
+pred = cl.prob_classify("I just put them on a firm surface")
 print(pred.max())
 print(pred.prob(pred.max()))
-prob_dist = cl.prob_classify("i dont know what to do")
+prob_dist = cl.prob_classify("resume chest compression")
 print(prob_dist.max())
-print(prob_dist.prob(prob_dist.max()))
-
-filename = 'text_to_step.pkl'
-pickle.dump(cl, open(filename, 'wb'))
-
-print("successfuly saved model")

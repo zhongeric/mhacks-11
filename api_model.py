@@ -19,7 +19,11 @@ with open(clf_path, 'rb') as f:
 parser = reqparse.RequestParser()
 parser.add_argument('query')
 
+<<<<<<< HEAD
 class PredictStep(Resource):
+=======
+class PredictSentiment(Resource):
+>>>>>>> 4953e79f92fe458dd4a7e568cc87fb53045ff166
     def get(self):
         # use parser and find the user's query
         args = parser.parse_args()
@@ -39,10 +43,18 @@ class PredictStep(Resource):
 
         return output
 
+<<<<<<< HEAD
 api.add_resource(PredictStep, '/')
+=======
+api.add_resource(PredictSentiment, '/')
+>>>>>>> 4953e79f92fe458dd4a7e568cc87fb53045ff166
 
 # example of another endpoint
 # api.add_resource(PredictRatings, '/ratings')
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(host='35.1.220.104', debug=True)
+=======
+    app.run(debug=True)
+>>>>>>> 4953e79f92fe458dd4a7e568cc87fb53045ff166
