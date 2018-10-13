@@ -54,7 +54,7 @@ api.add_resource(PredictSentiment, '/')
 
 if __name__ == '__main__':
 <<<<<<< HEAD
-    app.run(host='35.1.220.104', debug=True)
+    app.run(host='0.0.0.0', debug=True)
 =======
     app.run(debug=True)
 >>>>>>> 4953e79f92fe458dd4a7e568cc87fb53045ff166
