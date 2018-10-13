@@ -16,6 +16,6 @@ def filter(audio_string)
     for w in word_tokens:
         if w not in stop_words:
             filtered_sentence.append(w)
-    print (example_sent)
-    print(word_tokens)
+ 
+  
     print(filtered_sentence)
