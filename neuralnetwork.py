@@ -1,3 +1,4 @@
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as pyplot
@@ -48,8 +49,12 @@ def keywordsfrominstructions(text_file):
 
     return final_keywords
 
-adult_wordlist = keywordsfrominstructions('cpradult.txt')
-child_wordlist = keywordsfrominstructions('cprchild.txt')
-infant_wordlist = keywordsfrominstructions('cprinfant.txt')
+def main():
+    adult_wordlist = keywordsfrominstructions('cpradult.txt')
+    child_wordlist = keywordsfrominstructions('cprchild.txt')
+    infant_wordlist = keywordsfrominstructions('cprinfant.txt')
 
-print(adult_wordlist)
+    print(adult_wordlist)
+    
+if __name__ = '__main__':
+    main()
