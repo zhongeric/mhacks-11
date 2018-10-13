@@ -1,7 +1,7 @@
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 # fill example_sent
-def filter(audio_string)
+def filter(audio_string):
     example_sent = audio_string
    
 
