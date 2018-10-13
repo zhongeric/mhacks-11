@@ -1,0 +1,6 @@
+framework module Pods_mhacks {
+  umbrella header "Pods-mhacks-umbrella.h"
+
+  export *
+  module * { export * }
+}
