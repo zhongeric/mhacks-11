@@ -3,13 +3,13 @@ from twilio.rest import Client
 from flask_restful import reqparse, abort, Api, Resource
 import pickle
 import numpy as np
-from text_step_model import cl
+from pure_model import cl
 app = Flask(__name__)
 api = Api(app)
 # create new model object
 model = cl
 # load trained classifier
-clf_path = 'home/ezhong1900/new_mhacks/text_to_step.pkl'
+clf_path = 'home/ezhong1900/mhacks-11/pure/text_to_step.pkl'
 with open(clf_path, 'rb') as f:
     model.clf = pickle.load(f)
 
