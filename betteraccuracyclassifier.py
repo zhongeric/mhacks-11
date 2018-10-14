@@ -75,7 +75,7 @@ def main():
     print('Your predicted class is {}'.format(pred))
     print('Your predicted probability is {}'.format(prob))
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
 
 # parameters = {'vect_ngram_range': [(1, 1), (1, 2)], 'tfidf_use_idf': (True, False),
